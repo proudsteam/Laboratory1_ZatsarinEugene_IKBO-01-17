@@ -2,6 +2,7 @@ package android.example.laboratorynumber1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -11,18 +12,20 @@ import java.util.ArrayList;
 public class ListActivity extends AppCompatActivity {
 
     ArrayList<ImageText> massInfo = new ArrayList<>();
+    RecyclerView listprint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-        //RecyclerView listPrint = findViewById(R.id.list_print);
-        ListView listPrint = findViewById(R.id.list_print);
-        ImageTextAdapter adapt = new ImageTextAdapter(this, R.layout.list_item, massInfo);
-        String a;
-        listPrint.setAdapter(adapt);
-        ImageTextAdapterRecycle adrc = new ImageTextAdapterRecycle(this,R.layout.list_item,massInfo);
-        //listPrint.setAdapter(adrc);
+        listprint = findViewById(R.id.list_print);
+        listprint.setLayoutManager(new LinearLayoutManager(this));
+        //ListView listPrint = findViewById(R.id.list_print);
+        //ImageTextAdapter adapt = new ImageTextAdapter(this, R.layout.list_item, massInfo);
+        //ImageTextAdapterRecycle RecAdapter = new ImageTextAdapterRecycle(this,R.layout.list_item,massInfo);
+        MyRecycleAdapter myAdapter = new MyRecycleAdapter(massInfo);
+        listprint.setAdapter(myAdapter);
+        //listPrint.setAdapter(adapt);
         String word;
 
 

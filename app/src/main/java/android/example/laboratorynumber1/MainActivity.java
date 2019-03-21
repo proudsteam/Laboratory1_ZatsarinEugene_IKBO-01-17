@@ -23,7 +23,6 @@ boolean ba=false;
 
             }
         }, 4*1000);
-       // final Intent intent = new Intent(this,ListActivity.class);
 
 
     }

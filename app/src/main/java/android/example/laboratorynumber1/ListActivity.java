@@ -26,6 +26,7 @@ public class ListActivity extends AppCompatActivity {
         String word;
 
 
+
         for (int i=1;i <= 1000000; i++)
         {
             PrintWord test = new PrintWord(i);

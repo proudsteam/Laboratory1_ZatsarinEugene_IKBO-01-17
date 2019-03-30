@@ -3,8 +3,7 @@ package android.example.laboratorynumber1;
 public class PrintWord {
     private int n;
 
-    public PrintWord(int n) {
-        this.n = n;
+    public PrintWord() {
     }
 
     String printOfWord(int n)

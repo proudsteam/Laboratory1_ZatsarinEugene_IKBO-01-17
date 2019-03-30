@@ -26,30 +26,50 @@ public class ListActivity extends AppCompatActivity {
         MyRecycleAdapter myAdapter = new MyRecycleAdapter(massInfo);
         listprint.setAdapter(myAdapter);
         //listPrint.setAdapter(adapt);
-        String word;
+      //  String word;
 
 
 
-        for (int i=1;i <= 1000000; i++)
-        {
-            PrintWord test = new PrintWord(i);
+//        for (int i=1;i <= 1000000; i++)
+//        {
+//            PrintWord test = new PrintWord(i);
+//
+//            if ((i%2)==1) {
+//        //        a =String.valueOf(i);
+//
+//
+//                word=test.printOfWord(i);
+//                ImageText obg = new ImageText("#CCCCCC", word , R.drawable.imag);
+//                massInfo.add(obg);
+//            }
+//            else {
+//                 word=test.printOfWord(i);
+//        //        a =String.valueOf(i);
+//                ImageText obg = new ImageText("#FFFFFF", word, R.drawable.images);
+//                massInfo.add(obg);
+//            }
+//
+//        }
 
-            if ((i%2)==1) {
-        //        a =String.valueOf(i);
-
-
-                word=test.printOfWord(i);
-                ImageText obg = new ImageText("#CCCCCC", word , R.drawable.imag);
-                massInfo.add(obg);
-            }
-            else {
-                 word=test.printOfWord(i);
-        //        a =String.valueOf(i);
-                ImageText obg = new ImageText("#FFFFFF", word, R.drawable.images);
-                massInfo.add(obg);
-            }
-
-        }
+ //       for (int i=1;i <= 50000; i++)
+ //       {
+ //           PrintWord test = new PrintWord();
+//
+//
+ //               //        a =String.valueOf(i);
+//
+//
+ //               word=test.printOfWord(i);
+ //               ImageText obg = new ImageText("#CCCCCC", word , R.drawable.imag);
+ //               massInfo.add(obg);
+ //           i++;
+ //               word=test.printOfWord(i);
+ //               //        a =String.valueOf(i);
+ //               ImageText obg1 = new ImageText("#FFFFFF", word, R.drawable.images);
+ //               massInfo.add(obg1);
+//
+//
+ //       }
 
     }
 

@@ -36,7 +36,6 @@ public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyRe
    //     myRecycleHolder.imgView.setBackgroundColor(Color.parseColor(obj.getColor()));
    //     myRecycleHolder.txtView.setText(obj.getText());
         i++;
-        Log.d("Zheka","" + i);
         if (i%2 == 1) {
             Log.d("Zheka",""+i);
             myRecycleHolder.itemView.setBackgroundColor(Color.parseColor("#CCCCCC"));
